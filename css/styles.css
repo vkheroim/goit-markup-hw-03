@@ -68,11 +68,14 @@ img {
 
 .page-header {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #e7e9fc;
+}
+
+.header-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
