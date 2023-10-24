@@ -7,6 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -20,37 +27,41 @@
   <body>
     <!-- HEADER -->
     <header>
-      <nav>
+      <div class="logo-nav-container">
         <a href="./index.html" class="logo-link">web<span>Studio</span></a>
-        <ul class="section-nav">
-          <li>
-            <a href="./index.html" class="section-nav-link">studio</a>
-          </li>
+        <nav>
+          <ul class="section-nav">
+            <li>
+              <a href="./index.html" class="section-nav-link">studio</a>
+            </li>
 
-          <li>
-            <a href="" class="section-nav-link">portfolio</a>
-          </li>
+            <li>
+              <a href="" class="section-nav-link">portfolio</a>
+            </li>
 
-          <li>
-            <a href="" class="section-nav-link">contacts</a>
-          </li>
-        </ul>
-      </nav>
+            <li>
+              <a href="" class="section-nav-link">contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      <address class="communication-info">
-        <ul>
-          <li>
-            <a href="mailto:info@devstudio.com" class="communication-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="communication-link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="communication-container">
+        <address class="communication-info">
+          <ul class="communication-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="communication-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="communication-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <!-- end of header -->
 
@@ -59,39 +70,41 @@
       <!-- SECTION 1 -->
       <!-- HERO -->
       <section class="section-hero">
-        <h1 class="main-title">
-          effective solutions <span>for</span> your business
-        </h1>
-        <button type="button" class="hero-button">order service</button>
+        <div class="title-button-container">
+          <h1 class="main-title">
+            effective solutions <span>for</span> your business
+          </h1>
+          <button type="button" class="hero-button">order service</button>
+        </div>
       </section>
 
       <!-- SECTION 2 -->
       <!-- OUR TACTIC -->
       <section class="section-tactic">
         <h2 class="section-title hidden-title">our tactic</h2>
-        <ul>
-          <li>
+        <ul class="tactic-list">
+          <li class="tactic-item">
             <h3 class="section-tactic-title">strategy</h3>
             <p class="section-tactic-text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
+          <li class="tactic-item">
             <h3 class="section-tactic-title">punctuality</h3>
             <p class="section-tactic-text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
+          <li class="tactic-item">
             <h3 class="section-tactic-title">diligence</h3>
             <p class="section-tactic-text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
+          <li class="tactic-item">
             <h3 class="section-tactic-title">technologies</h3>
             <p class="section-tactic-text">
               Design practice focused on digital experiences. We bring forth a
@@ -105,14 +118,14 @@
       <!-- OUR TEAM -->
       <section class="section-team">
         <h2 class="section-title">our team</h2>
-        <ul>
+        <ul class="team-list">
           <li class="section-team-item">
             <img
               src="./images/team-section/team-card-1.jpg"
               alt="photo of mark guerrero"
               width="264"
             />
-            <h3 class="section-item-header">mark guerrero</h3>
+            <h3 class="section-item-title">mark guerrero</h3>
             <p class="section-team-text">product designer</p>
           </li>
 
@@ -122,7 +135,7 @@
               alt="photo of tom ford"
               width="264"
             />
-            <h3 class="section-item-header">tom ford</h3>
+            <h3 class="section-item-title">tom ford</h3>
             <p class="section-team-text">frontend developer</p>
           </li>
 
@@ -132,7 +145,7 @@
               alt="photo of camila garcia"
               width="264"
             />
-            <h3 class="section-item-header">camila garcia</h3>
+            <h3 class="section-item-title">camila garcia</h3>
             <p class="section-team-text">marketing</p>
           </li>
 
@@ -142,7 +155,7 @@
               alt="photo of daniel wilson"
               width="264"
             />
-            <h3 class="section-item-header">daniel wilson</h3>
+            <h3 class="section-item-title">daniel wilson</h3>
             <p class="section-team-text">ui designer</p>
           </li>
         </ul>
