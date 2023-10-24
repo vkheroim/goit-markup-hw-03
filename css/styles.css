@@ -66,11 +66,6 @@ img {
 
 /* HEADER */
 
-header .container {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 .page-header {
   display: flex;
 
@@ -112,6 +107,8 @@ header .container {
   /* flex */
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .section-nav-link {
