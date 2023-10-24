@@ -77,12 +77,13 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
   align-items: center;
+  padding: 0 15px;
 }
 
 .main-nav {
   display: flex;
+  align-items: center;
 }
 
 .logo-link {
@@ -106,6 +107,7 @@ img {
   /* flex */
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .section-nav-link {
@@ -190,15 +192,18 @@ img {
 }
 
 .visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
   position: absolute;
-  white-space: nowrap;
   width: 1px;
-}
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .tactic-list {
   display: flex;
   gap: 24px;
@@ -275,6 +280,7 @@ img {
 
 .portfolio-text-content {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 /* FOOTER */
