@@ -73,11 +73,6 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -108,12 +103,13 @@ img {
 .section-nav {
   text-transform: capitalize;
   color: #2e2f42;
-  /* flex */
   display: flex;
   gap: 40px;
 }
 
 .section-nav-link {
+  padding: 24px 0;
+  display: block;
   font-weight: 500;
 }
 
