@@ -9,7 +9,6 @@ body {
   background-color: #fff;
   color: #434455;
   min-height: 100vh;
-  /* box-sizing: border-box; */
 }
 
 a {
@@ -47,10 +46,9 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 72px;
-  margin-top: 120px;
 }
 
-.section-tactic-title {
+.section-specific-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -64,8 +62,11 @@ img {
   padding: 0 15px;
 }
 
+/* ------------------------------------------- */
+
 /* HEADER */
 
+/* CONTAINERS */
 .page-header {
   display: flex;
   align-items: center;
@@ -80,10 +81,12 @@ img {
   padding: 0 15px;
 }
 
-.main-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
+
+/* LOGOTYPE */
 
 .logo-link {
   text-transform: uppercase;
@@ -100,23 +103,27 @@ img {
   color: #2e2f42;
 }
 
-.section-nav {
+/* NAVIGATION */
+
+.navigation-list {
   text-transform: capitalize;
   color: #2e2f42;
   display: flex;
   gap: 40px;
 }
 
-.section-nav-link {
+.navigation-list-link {
   padding: 24px 0;
   display: block;
   font-weight: 500;
 }
 
-.section-nav-link:hover,
-.section-nav-link:focus {
+.navigation-list-link:hover,
+.navigation-list-link:focus {
   color: #404bbf;
 }
+
+/* COMMUNICATION */
 
 .communication-info {
   font-style: normal;
@@ -127,29 +134,26 @@ img {
   gap: 40px;
 }
 
-.communication-link:focus,
-.communication-info:hover {
+.communication-list li:hover,
+.communication-list li:focus {
   color: #404bbf;
 }
 
+/* ------------------------------------------- */
+
 /* SECTION 1 */
 
+/* CONTAINER */
 .section-hero {
   background-color: #2e2f42;
-  display: flex;
-  justify-content: center;
   padding: 188px 0;
+  text-align: center;
 }
 
-.title-button-container {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  align-items: center;
-  justify-content: center;
-}
-
+/* CONTENT */
 .main-title {
+  margin: 0 auto;
+  margin-bottom: 48px;
   color: #fff;
   font-size: 56px;
   font-weight: 700;
@@ -163,7 +167,10 @@ img {
   text-transform: lowercase;
 }
 
+/* BUTTON */
+
 .hero-button {
+  /* text */
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -172,6 +179,7 @@ img {
   font-style: normal;
   line-height: 1.5;
   cursor: pointer;
+  /* style look */
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -184,12 +192,16 @@ img {
   background-color: #404bbf;
 }
 
+/* ------------------------------------------- */
+
 /* SECTION 2 */
 
+/* CONTAINER */
 .section-tactic {
   padding: 120px 0;
 }
 
+/* HIDDEN TITLE */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -203,13 +215,15 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* CONTENT */
 .tactic-list {
   display: flex;
   gap: 24px;
   justify-content: center;
 }
 
-.tactic-item {
+.tactic-list-item {
   width: calc((100% - 72px) / 4);
 }
 
@@ -217,7 +231,11 @@ img {
   margin-bottom: 8px;
 }
 
+/* ------------------------------------------- */
+
 /* SECTION 3 */
+
+/* CONTAINER */
 .section-team {
   background-color: #f4f4fd;
   text-transform: capitalize;
@@ -230,19 +248,16 @@ img {
   gap: 24px;
 }
 
-.section-team-item {
+.team-list-item {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-text-content {
+.team-list-text-content {
   padding: 32px 0;
   text-align: center;
 }
@@ -252,12 +267,15 @@ img {
   margin-bottom: 8px;
 }
 
-.section-team-text {
+.team-list-text {
   font-size: 16px;
   text-align: center;
 }
 
+/* ------------------------------------------- */
+
 /* SECTION 4 */
+
 .section-portfolio {
   text-transform: capitalize;
   padding-top: 120px;
@@ -272,22 +290,25 @@ img {
   column-gap: 24px;
 }
 
-.portfolio-item {
+.portfolio-list-item {
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio-item img {
+.portfolio-list-item img {
   width: 100%;
 }
 
-.portfolio-text-content {
+.portfolio-list-text-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
+/* ------------------------------------------- */
+
 /* FOOTER */
+
 .section-footer {
   background-color: #2e2f42;
   padding: 100px 0;
